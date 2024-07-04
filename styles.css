@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    width: 1440px;
+    height: 1024px;
+    margin-top: 10px;
+    display: flex;
+}
+.container .side1{
+    flex-basis: 50%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.side1 .main-img{
+    width: 587px;
+    height: 680px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+}
+.side1 .main-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.side1 .sub-main{
+    width: 520px;
+    height: 115px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.side1 .sub-main img{
+    width: 115px;
+    height: 115px;
+    position: relative;
+    border-radius: 5px;
+    top: 250px;
+}
+.side2 .header{
+    width: 582px;
+    height: 64px;
+    border-bottom: 1px solid #E4E4E4;
+}
+.side2 .header p:nth-child(1){
+    font-size: 16px;
+    width: 68px;
+    height: 19px;
+    color:#B9BBBF;
+    text-transform: capitalize;
+}
+.side2 .header p:nth-child(2){
+    font-size: 24px;
+    width: 265px;
+    height: 34px;
+    font-weight: 600;
+    text-transform: capitalize;
+    padding-top: 5px;
+}
+.side2 .price{
+    width: 582px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 1px solid #E4E4E4;
+}
+.side2 .price p:nth-child(1){
+    display: flex;
+}
+.side2 .price p:nth-child(1) p:nth-child(1){
+    font-size: 30px;
+    font-weight: 700;
+    color: #3A4980;
+}
+.side2 .price p:nth-child(1) p:nth-child(2){
+    padding-top: 10px;
+    margin-left: 15px;
+    font-weight: 600;
+    color:#FF0000;
+}
+.side2 .price .hello{
+    font-size: 20px;
+    text-decoration: line-through;
+    color: black;
+}
+.side2 .color{
+    width:582px;
+    height: 140px;
+    border-bottom: 1px solid #E4E4E4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.side2 .color #c{
+    color: #B9BBBF;
+}
+.side2 .color .col{
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+}
+.side2 .color .col div:not(.side2 .color .col div:nth-child(1)){
+    margin-left: 20px;
+}
+
+.side2  .size{
+    width: 497px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.side2 .size #s{
+    color: #B9BBBF;
+}
+.side2 .size .siz{
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+}
+.side2 .size .siz .sub{
+    display: flex;
+    border-radius: 8px;
+    max-width: 200px;
+    min-width: 80px;
+    justify-content: space-evenly;
+    padding-inline: 3px;
+    height:31px;
+    background-color: brown;
+    margin-right: 10px;
+    background-color: #EDF0F8;
+}
+.side2 .size .siz .sub p{
+    font-size: 16px;
+    position: relative;
+    top: 5px;
+}
+.side2 .cart{
+    width: 497px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.side2 .cart .counter{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    width: 169px;
+    height:59px;
+    border-radius: 50px;
+    background-color: #F3F3F3;
+}
+.side2 .cart .counter p{
+    font-weight: 700;
+    font-size: 22px;
+}
+.side2 .cart .counter div{
+    font-size: 18px;
+    font-weight:700;
+}
+.side2 .cart .add p{
+    width: 309px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    margin-left: 10px;
+    border-radius: 50px;
+    height: 59px;
+    background-color: #3A4980;
+}
+.side2 .text{
+    width: 558px;
+    height: 224px;
+    display: flex;
+    align-items: center;
+}
+.side2 .text p{
+    font-size: 20px;
+    color: #a3a3a3;
+    line-height: 28px;
+}
+.side2 .color .col .picker.active{
+    scale: 0.9;
+    outline-offset: 5px;
+}
+.side2 .color .col .picker.active:before{
+    width: 100px;
+    height: 2px;
+    background-color: black;
+}
+.side2 .size .siz .sub.active{
+    color: #3A4980;
+}
+#hlo{
+    height: 50px;
+    border-bottom: 1px solid #E4E4E4;
+
+}
+#result{
+    width: 495px;
+    height:31px;
+    font-size: 14px;
+    padding-top: 5px;
+    text-align: center;
+}
